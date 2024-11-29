@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="prueba.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Links</title>
+    <style>
+        .instagram-widget {
+            width: 100%;
+            max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .instagram-widget iframe {
+            width: 100%;
+            height: 500px; /* Ajusta la altura según sea necesario */
+            border: none;
+        }
+    </style>
+</head>
+<body class="links">
+    <br>
+    <br>
+    <form id="myForm" style="display: flex; align-items: center;">
+        <select id="mySelect" style="margin-right: 20px;">
+            <option value="Links.html">Links</option>
+            <option value="Mayorista.html">Venta Mayorista</option>
+            <option value="index.html">Pagina principal</option>
+            <option value="Contacto.html">Contacto</option>
+            <option value="Minorista.html">Venta Minorista</option>
+        </select>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            window.location.href = x;
+        }
+    </script>
+
+    <h1><a href="https://www.instagram.com/coral_sahumerios?igsh=MTdhbmpyNDZubmVzaQ==">Instagram de Coral Sahumerios</a></h1>
+
+    <!-- Vista previa del perfil de Instagram -->
+    <div class="instagram-widget">
+        <iframe src="https://www.instagram.com/p/C-QTpWHA_iy/embed" allowtransparency="true" allow="encrypted-media" frameborder="0"></iframe>
+    </div>
+</body>
+</html>

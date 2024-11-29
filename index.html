@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="prueba.css">
+    <title>LidHerma Life</title>
+</head>
+<body>
+    
+<div class="flex-container section-header">
+    <button class="botonBase"><a href="Contacto.html" target="_blank">Contacto</a></button>
+    <button class="botonBase"><a href="Mayorista.html" target="_blank">Venta Mayorista</a></button>
+    <button class="botonBase"><a href="Links.html" target="_blank">Links</a></button>
+    <button class="botonBase"><a href="https://www.instagram.com/coral_sahumerios?igsh=MTdhbmpyNDZubmVzaQ==" target="_blank"><i class="fab fa-instagram"></i></a></button>
+    <button class="botonBase"><a href="Minorista.html" target="_blank">Venta Minorista</a></button>
+</div>
+<br><br><br>
+
+<form id="myForm" class="flex-center">
+    <select id="mySelect" style="margin-right: 20px;">
+        <option value="Links.html">Links</option>
+        <option value="Mayorista.html">Venta Mayorista</option>
+        <option value="index.html">Pagina principal</option>
+        <option value="Contacto.html">Contacto</option>
+        <option value="Minorista.html">Venta Minorista</option>
+    </select>
+    <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+</form>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        window.location.href = x;
+    }
+</script>
+
+<div class="section">
+    <h1 style="text-align: center;"><b>LidHerma Life</b></h1>
+    <div style="display: flex; justify-content: center;">
+        <img src="logo.jpg" alt="Descripción de la imagen" width="50%" height="200">
+    </div>
+    <p style="font-size:20px;"><b><i>Bienvenidos a LidHerma Life</i></b></p>
+</div>
+
+<div class="section-light">
+    <div style="text-align: center;">
+        <b><h3>¿Quiénes somos?</h3></b>
+    </div>
+    <p class="especialistas" style="text-align:justify;">
+        Somos especialistas en el cuidado de la piel, con estudios certificados por el Gobierno de la Ciudad.
+    </p>
+</div>
+
+<div class="section section-alternate">
+    <b><h3 class="header3d">¿Cómo funcionamos?</h3></b>
+    <p style="text-align: justify;">
+        <ul>
+            <li><b>Vos elegís lo que te gusta, nos escribís a nuestro whatsapp o mail con todo lo que querés ordenar y nosotros te armamos el pedido y te lo enviamos personalmente</b></li>
+        </ul>
+    </p>
+</div>
+
+<div class="flex-center">
+    <div class="carousel" style="margin: 20px 0;">
+        <div class="carousel-inner" id="carousel-inner"></div>
+        <button class="carousel-control prev" onclick="prevSlide()">❮</button>
+        <button class="carousel-control next" onclick="nextSlide()">❯</button>
+    </div>
+</div>
+
+<script src="carrusel.js"></script>
+</body>
+</html>

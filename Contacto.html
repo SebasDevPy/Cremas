@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="prueba.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+</head>
+<body>
+    <br>
+    <br>
+    <form id="myForm" style="display: flex; align-items: center;">
+        <select id="mySelect" style="margin-right: 20px;">
+            <option value="Links.html">Links</option>
+            <option value="Mayorista.html">Venta Mayorista</option>
+            <option value="index.html">Pagina principal</option>
+            <option value="Contacto.html">Contacto</option>
+            <option value="Minorista.html">Venta Minorista</option>
+        </select>
+        <input type="button" onclick="myFunction()" value="Ir a la página seleccionada">
+    </form>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mySelect").value;
+            window.location.href = x;
+        }
+    </script>
+    <h1 style="text-align: left;"><u><b>Contacto:</b></u></h1>
+    <ul>
+        <li><b>Nombre:</b> Coral Medina</li>
+        <li><b>Mail:</b> sebas_heika@hotmail.com</li>
+        <li><b>Número de contacto:</b> +54 11 6527-7042 </li>
+        <br>
+
+    </ul>
+</body>
